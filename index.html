@@ -1,13 +1,82 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+
+    <title>Менің алғашқы сайтым</title>
+
+    <!-- Google Fonts шрифті -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+
+    <!-- CSS стилін қосу -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Добро пожаловать!</h1>
-    <p>Это мой учебный сайт.</p>
+
+    <!-- Сайттың жоғарғы бөлігі -->
+    <header class="header">
+        <div class="container nav">
+            <a class="logo" href="#home">МЕНІҢ САЙТЫМ</a>
+
+            <nav>
+                <a href="#home">Басты бет</a>
+                <a href="#about">Мен туралы</a>
+                <a href="#contact">Байланыс</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Сайттың негізгі бөлігі -->
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <p class="subtitle">МЕНІҢ АЛҒАШҚЫ ЖОБАМ</p>
+
+                <h1>Үйрен. Жаса. Дамы.</h1>
+
+                <p class="description">
+                    Бұл сайт HTML, CSS және JavaScript тілдері
+                    арқылы жасалды. Мұнда мен веб-бағдарламалауды
+                    үйреніп, өз білімімді жетілдіремін.
+                </p>
+
+                <a class="button" href="#about">
+                    Толығырақ білу
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <h2>Менің сайтым туралы</h2>
+
+            <p>
+                Бұл оқу жобасы веб-сайт жасаудың негізгі
+                тәсілдерін үйрену үшін құрылған. Сайтта HTML
+                арқылы құрылым, CSS арқылы дизайн, ал JavaScript
+                арқылы интерактивтілік қолданылады.
+            </p>
+        </section>
+    </main>
+
+    <!-- Сайттың төменгі бөлігі -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <p>МЕНІҢ САЙТЫМ</p>
+
+            <p>
+                HTML, CSS және JavaScript арқылы жасалған оқу жобасы
+            </p>
+
+            <p>&copy; 2026. Барлық құқықтар қорғалған.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript файлын қосу -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>

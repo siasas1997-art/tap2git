@@ -1,3 +1,4 @@
+
 :root {
     box-sizing: border-box;
     font-size: 16px;
@@ -7,4 +8,163 @@
     padding: 0;
     margin: 0;
     box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1ff;
+    color: #242044;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Жоғарғы бөлік */
+.header {
+    background: #29204f;
+    color: white;
+    padding: 22px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c9b8ff;
+}
+
+/* Негізгі бөлік */
+.hero {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #29204f, #7055c9);
+    color: white;
+    padding: 70px 0;
+}
+
+.hero-content h1 {
+    max-width: 850px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: clamp(28px, 4vw, 46px);
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+.subtitle {
+    color: #d1c5ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.description {
+    max-width: 650px;
+    line-height: 1.9;
+    color: #eeeaff;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 13px 25px;
+    background: white;
+    color: #39276d;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.button:hover {
+    background: #e2d8ff;
+    transform: translateY(-3px);
+}
+
+/* Сайт туралы */
+.about {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.about h2 {
+    color: #39276d;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    line-height: 1.9;
+    color: #5d5875;
+}
+
+/* Төменгі бөлік */
+.footer {
+    background: #1d1738;
+    color: #e6e0ff;
+    padding: 32px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-content p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Телефонға бейімдеу */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .about h2 {
+        font-size: 25px;
+    }
 }
